@@ -1,0 +1,17 @@
+#envname = 你的環境名稱
+conda activate envname
+
+#先pip ipykernel
+pip install ipykernel
+
+#將環境加入到kernel
+python -m ipykernel install --user --name envname --display-name "輸入你想顯示的名字"
+
+#列出全部kernel
+jupyter kernelspec list
+
+#刪除指定kernel
+jupyter kernelspec remove kernel_name
+
+#更改主題
+jt -t oceans16 -T -N -fs 14 -nfs 14 -ofs 12 -dfs 12 -cellw 1280 -kl
